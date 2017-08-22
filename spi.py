@@ -9,7 +9,7 @@ import time
 
 
 class SPI():
-    def __init__(self, sck=15, mosi=17, miso=16, cs=14):
+    def __init__(self, sck=15, mosi=16, miso=17, cs=14):
         self.sck = mraa.Gpio(sck)
         self.mosi = mraa.Gpio(mosi)
         self.miso = mraa.Gpio(miso)
